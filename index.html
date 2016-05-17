@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" >
+    <title>svg地图生成工具</title>
+    <link rel="stylesheet" href="css/bmap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="config">
+        <h1>SVG 地图生成工具</h1>
+        <div>
+            <p>设置服务器地址(不支持本地打开)</p>
+            <input type="text" name="host" id="host" value="/svg地图工具" />
+        </div>
+        <div>
+            <p>设置JSON文件夹</p>
+            <input type="text" name="folder" id="folder" value="江西边界值/" />
+        </div>
+        <div>
+            <p>设置中心点</p>
+            <input type="text" name="point" id="point" value="115.506988,27.447015" />
+        </div>
+        <div>
+            <p>设置前缀\填充色\边框色\继承</p>
+            <input type="text" name="setting" id="setting" value="jx\#2c7db5\#2e669a\rgba(123,165,199,.20)" />
+        </div>
+        <div id="json_s">
+            <p>设置JSON文件名\分级码</p>
+            <input type="text" name="json" id="json1" />
+        </div>
+    </div>
+    <div class="map">
+        <div class="btn">
+            <button id="zoomMax">放大</button>
+            <button id="zoomMin">缩小</button>
+            <button id="addJson">添加JSON</button>
+            <button id="putJson">生成地图</button>
+            <button id="svgJS">生成JS文件</button>
+        </div>
+        <div id="map"></div>
+        <div class="layer">
+            <P>小提示：enter键可快速生成左侧JSON文本框</P>
+            <p>1. 将需要生成的svg地图的边界值放置到文件目录的 edge 文件夹下（按事例放置）</p>
+            <p>2. 设置JSON文件夹：填写edge下（您新建的文件夹的名称，也可以为空）</p>
+            <p>3. 设置中心点：根据您当前所要法院所在地区的中心点，防止偏移找不到SVG地图在哪里</p>
+            <p>4. 设置JSON文件名：受系统限制，需要手动填写json文件对应的名称</p>
+            <p>5. 添加按钮，添加一个新的JSON文件名文本框，支持个数不限制</p>
+            <p>6. 生成按钮，生成SVG地图，并提供预览</p>
+        </div>
+    </div>
+    <textarea id="console" ></textarea>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="api/mapapi.min.js"></script>
+    <script type="text/javascript" src="js/cityMap.js"></script>
+</body>
+</html>

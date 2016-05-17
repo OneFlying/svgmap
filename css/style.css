@@ -1,0 +1,131 @@
+html, body {
+    padding: 0 0;
+    margin: 0 0;
+    font-size: 100%;
+    background: #ffffff;
+    font-family: 'Arial','微软雅黑','Microsoft YaHei UI',sans-serif;
+    overflow: hidden;
+}
+#config {
+    background: #143459;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    border-right: 1px solid #2c4159;
+    overflow: hidden;
+}
+#config h1 {
+    border-bottom: 1px solid #2c4159;
+    margin: 0 0;
+    text-align: center;
+    padding: 20px 0;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 28px;
+}
+#config div {
+    border-bottom: 1px solid #2c4159;
+    padding: 0 5px 10px;
+}
+#config div p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ffffff;
+}
+#config div p button {
+    float: right;
+}
+.map {
+    position: fixed;
+    left: 300px;
+    top: 0;
+    right: 400px;
+    bottom: 0;
+    background: #e8e8e8;
+}
+.map .btn {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 40px;
+    background: rgba(20,52,89,.85);
+}
+.map #map {
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    bottom: 150px;
+}
+.map .layer {
+    position: absolute;
+    bottom:  0;
+    height: 150px;
+    width: 100%;
+    background: #ffffff;
+    border-top: 1px solid #777;
+    overflow: auto;
+    border-bottom: 5px solid rgba(20,52,89,.85);
+}
+.map .layer p {
+    line-height: 1.5em;
+    margin:  0 0;
+}
+#console {
+    position: fixed;
+    width: 396px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #ffffff;
+    font-family: 'Arial','微软雅黑','Microsoft YaHei UI',sans-serif;
+    /*border-top: 40px solid rgba(20,52,89,.85);*/
+    border-bottom: 5px solid rgba(20,52,89,.85);
+    border-right: none;
+    border-top: 5px solid rgba(20,52,89,.85);
+    border-left: 1px solid rgba(20,52,89,.85);
+    outline: none;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.5em;
+    z-index: 10000000;
+}
+
+input[type=text] {
+    width: 275px;
+    background: #ffffff;
+    font-family: 'Arial','微软雅黑','Microsoft YaHei UI',sans-serif;
+    border: none;
+    outline: none;
+    padding: 7px 5px;
+    color: #333;
+}
+
+#json_s input[type=text] {
+    margin: 5px 0;
+}
+
+button {
+    font-family: 'Arial','微软雅黑','Microsoft YaHei UI',sans-serif;
+    height: 36px;
+    font-size: 18px;
+    padding: 0 25px;
+    border: none;
+    outline: none;
+    margin: 2px 0 0;
+    background: rgba(0,0,0,.5);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#json_s {
+    position: absolute;
+    bottom: 0;
+    top: 380px;
+    left: 0;
+    width: 315px;
+    background: rgba(0,0,0,.25);
+    overflow: auto;
+}
